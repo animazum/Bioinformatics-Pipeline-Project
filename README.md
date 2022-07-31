@@ -66,10 +66,10 @@ and a list of all your containers will be visible)
 $sudo docker cp “/MY/LAPTOP/FILE/” MYACONTAINERID:/MYFILE
 
 #############################################
-Running the program
+###Running the program
 Now to this program we need to install samtools, its quite easy to install it.
 $apt-get install samtools
 
-Have fun running the program (in case that the script does not have de correct permissions be sure to set $chmod +x script.ExtractReadCounts.sh)
+##Have fun running the program (in case that the script does not have de correct permissions be sure to set $chmod +x script.ExtractReadCounts.sh)
 $ ./script.ExtractReadCounts.sh list.BAM.BED.txt
 
