@@ -1,0 +1,4 @@
+mt.bam	regions.bed
+mt2.bam	regions2.bed
+mt3.bam	regions3.bed
+mt_(copy).bam regions_(copy).bed
