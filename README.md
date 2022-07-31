@@ -44,19 +44,24 @@ Follow the steps to instal docker as they could change depending on date, year, 
 Also I have to say that for this program I used linux ubuntu 20.04 but it could also run in any other similar linux OS or unix OS. 
 
 #### Creating the docker container. 
+
 $sudo docker run -d -t --name MYCONTAINER ubuntu bash
 
 ####Open the container 
+
 sudo docker exec -it MYCONTAINER bash
 
 #### basic linux maintenance so your container is updated and ready to run
+
 $apt-get update 
 $apt-get upgrade
 
 Now that you are in your container create a directory to store your data 
+
 $mkdir MYFILE
 
 ### In case that your have data to download from github … (it is impotant to write “raw” in the web address to download the correct raw data). 
+
 $wget https://github.com/BLABLA/BLABLA/raw/BLABLA/BLABLA/mt.bam
 
 ###In case that you have downloaded your data outside of your docker conatiner... Move your data into your docker container 
@@ -68,8 +73,10 @@ $sudo docker cp “/MY/LAPTOP/FILE/” MYACONTAINERID:/MYFILE
 #############################################
 ###Running the program
 Now to this program we need to install samtools, its quite easy to install it.
+
 $apt-get install samtools
 
 ##Have fun running the program (in case that the script does not have de correct permissions be sure to set $chmod +x script.ExtractReadCounts.sh)
+
 $ ./script.ExtractReadCounts.sh list.BAM.BED.txt
 
