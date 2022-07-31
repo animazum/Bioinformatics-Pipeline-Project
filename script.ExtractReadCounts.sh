@@ -18,7 +18,7 @@ You need samtools to run this script.
 #########################################################################################"
 
 #read -r FILENAME  ###<--- In case that you want to make the program interactive :)
-FILENAME=${1?Error: no name given}  ### silence in case that you whant to make program interactive
+FILENAME=${1?Error: no name given}  ### silence it in case that you want to make program interactive
 
 LINES=$(cat $FILENAME)
 COUNTER=1
