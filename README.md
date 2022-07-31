@@ -60,23 +60,23 @@ Now that you are in your container create a directory to store your data
 
 $mkdir MYFILE
 
-### In case that your have data to download from github … (it is impotant to write “raw” in the web address to download the correct raw data). 
+####In case that your have data to download from github … (it is impotant to write “raw” in the web address to download the correct raw data). 
 
 $wget https://github.com/BLABLA/BLABLA/raw/BLABLA/BLABLA/mt.bam
 
-###In case that you have downloaded your data outside of your docker conatiner... Move your data into your docker container 
+####In case that you have downloaded your data outside of your docker conatiner... Move your data into your docker container 
 after you have downloaded it from your original location. (to know your container id simply type inyour computer $sudo docker ps, 
 and a list of all your containers will be visible)
 
 $sudo docker cp “/MY/LAPTOP/FILE/” MYACONTAINERID:/MYFILE
 
 #############################################
-###Running the program
+####Running the program
 Now to this program we need to install samtools, its quite easy to install it.
 
 $apt-get install samtools
 
-##Have fun running the program (in case that the script does not have de correct permissions be sure to set $chmod +x script.ExtractReadCounts.sh)
+####Have fun running the program (in case that the script does not have de correct permissions be sure to set $chmod +x script.ExtractReadCounts.sh)
 
 $ ./script.ExtractReadCounts.sh list.BAM.BED.txt
 
