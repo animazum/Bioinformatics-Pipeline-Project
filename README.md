@@ -24,7 +24,7 @@ See example file: list.BAM.BED.txt
 Be sure to have all the bam, bed and .txt files in the working directory
 You need samtools to run this script.
 
-I will upload a file with example bam and bed files in case that you need to do some testing before using larger files.
+I will upload a file with example bam and bed files in case that you need to do some testing before using larger files. (test BAM file was retrieved from https://github.com/brainstorm/)
 
 This program in intended to be capable to use an n number of bam or bed files. Also It only requires samtools and basic bash tools
 so practically any linux machine would be able to run it in no time.
