@@ -93,8 +93,8 @@ and a list of all your containers will be visible)
 ## Usange 
 ##### Install samtools and bamtools, it's quite easy to install it.
 
-`apt-get install samtools
-apt-get install bamtools`
+`apt-get install samtools`
+`apt-get install bamtools`
 
 
 ##### Have fun running the program 
