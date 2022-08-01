@@ -47,7 +47,7 @@ GitHub: animazum
 ## Dependencies
 samtools
 
-## Recomended setup to run the program:
+## Recommended setup to run the program:
 
 ##### Install docker and create docker container 
 I recommend to use docker for this as it is a very powerful tool to test, use and standardize any program in a safe and controlled environment. But Docker is not fundamentally needed. 
