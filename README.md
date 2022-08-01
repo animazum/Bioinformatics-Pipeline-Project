@@ -6,6 +6,7 @@ Hello, this program is called Bioinformatics-Pipeline-Project and it does the fo
 2. Extract reads in the regions and convert them into a FASTA file.
 
 ########################## IMPORTANT NOTES  ##########################
+
 This program will need bam files and bed with the regions that you want to extract. 
 The output files will be a directory with the original bam file, the original bed file, a sorted bam file, 
 a json file with the counts of the regions specified, the reads of the regions in bam and fasta format. 
@@ -30,14 +31,14 @@ This program in intended to be capable to use an n number of bam or bed files. A
 so practically any linux machine would be able to run it in no time.
 ############################################################################
 
-Author
+#### Author
 Benjamin Padilla-Morales
 GitHub: animazum
 
-Dependencies
+#### Dependencies
 samtools
 
-Recomended setup to run the program:
+#### Recomended setup to run the program:
 
 Install docker and create docker container 
 I recommend to use docker for this as it is a very powerful tool to test and use any program in a safe and controlled environment. 
@@ -50,15 +51,15 @@ Follow the steps to instal docker as they could change depending on date, year, 
 
 Also I have to say that for this program I used linux ubuntu 20.04 but it could also run in any other similar linux OS or unix OS. 
 
-#### Creating the docker container. 
+##### Creating the docker container. 
 
 $sudo docker run -d -t --name MYCONTAINER ubuntu bash
 
-####Open the container 
+##### Open the container 
 
 sudo docker exec -it MYCONTAINER bash
 
-#### basic linux maintenance so your container is updated and ready to run
+##### basic linux maintenance so your container is updated and ready to run
 
 $apt-get update 
 $apt-get upgrade
@@ -71,7 +72,7 @@ $mkdir MYFILE
 
 $wget https://github.com/BLABLA/BLABLA/raw/BLABLA/BLABLA/mt.bam
 
-####In case that you have downloaded your data outside of your docker conatiner... Move your data into your docker container 
+#####In case that you have downloaded your data outside of your docker conatiner... Move your data into your docker container 
 after you have downloaded it from your original location. (to know your container id simply type inyour computer $sudo docker ps, 
 and a list of all your containers will be visible)
 
@@ -79,7 +80,7 @@ $sudo docker cp “/MY/LAPTOP/FILE/” MYACONTAINERID:/MYFILE
 
 #############################################
 
-Usange 
+#### Usange 
 Now to this program we need to install samtools, its quite easy to install it.
 
 $apt-get install samtools
