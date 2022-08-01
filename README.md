@@ -69,8 +69,11 @@ Follow the steps to install docker as they could change depending on date, year,
 ##### basic linux maintenance so your container is updated and ready to run
 
 `apt-get update 
+
 apt-get upgrade
+
 apt-get install wget
+
 apt-get install zip
 `
 Now that you are in your container create a directory to store your data 
@@ -96,6 +99,7 @@ and a list of all your containers will be visible)
 ##### Install samtools and bamtools, it's quite easy to install it.
 
 `apt-get install samtools`
+
 `apt-get install bamtools`
 
 
