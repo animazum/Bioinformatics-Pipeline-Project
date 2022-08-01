@@ -1,20 +1,19 @@
 #!/usr/bin/env bash
-echo "################################################################################
-Hello, this program does:
-1. Read counts for the regions specified in a provided BED file outputed as JSON.
-2. Extract reads in the regions and convert them into a FASTA file.
+echo "#################################################################################
+PLEASE TYPE THE NAME OF A .txt FILE containing the bam and bed files, DO NOT USE FILES WITH SPACES IN THE NAMES.
+Please uncompress all files that you want to use before using the program.
 
-PLEASE TYPE THE NAME OF A .txt FILE containing the bam
-and bed files, DO NOT USE FILES WITH SPACES IN THE NAMES.
-Please uncompress all files that you want to use before hand.
+Format example for inputfile: file.bam file.bed file2.bam file2.bed file.x.bam filez.bed
 
-Format example for inputfile:
-file.bam file.bed
-file2.bam file2.bed
-file.x.bam filez.bed
+See example file: list.BAM.BED.txt
 
-Be sure to have all the bam, bed and .txt files in the working directory
-You need samtools to run this script.
+Be sure to have all the bam, bed and .txt files in the working directory You need samtools and bamtools to run this script.
+
+I will upload a file with example bam and bed files in case that you need to do some testing before using larger files.
+(test BAM file was retrieved from https://github.com/brainstorm/)
+
+This program is capable of using as many bam or bed files as needed. Also It only requires samtools, bamtools and basic bash tools,
+so practically any machine linux ubuntu 20.04 LTS or similar would be able to run it in no time.
 #########################################################################################"
 
 #read -r FILENAME  ###<--- In case that you want to make the program interactive :)
