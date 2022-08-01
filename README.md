@@ -35,11 +35,12 @@ You need samtools to run this script.
 
 I will upload a file with example bam and bed files in case that you need to do some testing before using larger files. (test BAM file was retrieved from https://github.com/brainstorm/)
 
-This program is capable to used as many bam or bed files as needed. Also It only requires samtools and basic bash tools, so practically any linux machine would be able to run it in no time.
+This program is capable to used as many bam or bed files as needed. Also It only requires samtools and basic bash tools, so practically any machine linux ubuntu 20.04 LTS or similar would be able to run it in no time.
 ############################################################################
 
 ## Author
 Benjamin Padilla-Morales
+
 GitHub: animazum
 
 ## Dependencies
@@ -54,8 +55,6 @@ Installation of docker can be found in dockers website:
 https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository
 
 Follow the steps to instal docker as they could change depending on date, year, etc that you are looking at this readme file. 
-
-For this program I used linux ubuntu 20.04 LTS but it could also run in any other similar linux or unix OS. 
 
 ##### Creating the docker container. 
 
