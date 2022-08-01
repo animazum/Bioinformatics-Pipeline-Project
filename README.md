@@ -32,11 +32,11 @@ file.x.bam filez.bed
 See example file: list.BAM.BED.txt
 
 Be sure to have all the bam, bed and .txt files in the working directory
-You need samtools to run this script.
+You need samtools and bamtools to run this script.
 
 I will upload a file with example bam and bed files in case that you need to do some testing before using larger files. (test BAM file was retrieved from https://github.com/brainstorm/)
 
-This program is capable of using as many bam or bed files as needed. Also It only requires samtools and basic bash tools, so practically any machine linux ubuntu 20.04 LTS or similar would be able to run it in no time.
+This program is capable of using as many bam or bed files as needed. Also It only requires samtools, bamtools and basic bash tools, so practically any machine linux ubuntu 20.04 LTS or similar would be able to run it in no time.
 ############################################################################
 
 ## Author
@@ -46,6 +46,7 @@ GitHub: animazum
 
 ## Dependencies
 samtools
+bamtools
 
 ## Recommended setup to run the program:
 
@@ -90,9 +91,11 @@ and a list of all your containers will be visible)
 #############################################
 
 ## Usange 
-##### Install samtools, it's quite easy to install it.
+##### Install samtools and bamtools, it's quite easy to install it.
 
-`apt-get install samtools`
+`apt-get install samtools
+apt-get install bamtools`
+
 
 ##### Have fun running the program 
 (in case that the script does not have the correct permissions be sure to set $chmod +x script.ExtractReadCounts.sh)
