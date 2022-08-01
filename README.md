@@ -9,7 +9,7 @@ Input files.
 2. Bed file
 3. Index of correspondence between bam and bed files in a txt file
 
-Outputfiles.
+Output files.
 
 Directory and within it you will find: 
 1. Original bam file
@@ -36,7 +36,7 @@ You need samtools to run this script.
 
 I will upload a file with example bam and bed files in case that you need to do some testing before using larger files. (test BAM file was retrieved from https://github.com/brainstorm/)
 
-This program is capable to used as many bam or bed files as needed. Also It only requires samtools and basic bash tools, so practically any machine linux ubuntu 20.04 LTS or similar would be able to run it in no time.
+This program is capable of using as many bam or bed files as needed. Also It only requires samtools and basic bash tools, so practically any machine linux ubuntu 20.04 LTS or similar would be able to run it in no time.
 ############################################################################
 
 ## Author
@@ -50,12 +50,12 @@ samtools
 ## Recommended setup to run the program:
 
 ##### Install docker and create docker container 
-I recommend to use docker for this as it is a very powerful tool to test, use and standardize any program in a safe and controlled environment. But Docker is not fundamentally needed. 
+I recommend using docker for this as it is a very powerful tool to test, use and standardize any program in a safe and controlled environment. But Docker is not fundamentally needed. 
 
 Installation of docker can be found in dockers website: 
 https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository
 
-Follow the steps to instal docker as they could change depending on date, year, etc that you are looking at this readme file. 
+Follow the steps to install docker as they could change depending on date, year, etc that you are looking at this readme file. 
 
 ##### Creating the docker container. 
 
@@ -75,14 +75,14 @@ Now that you are in your container create a directory to store your data
 `mkdir MYFILE`
 
 #### In case that your have data to download from github
-(it is impotant to write “raw” in the web address to download the correct raw data). 
+(it is important to write “raw” in the web address to download the correct raw data). 
 
 `wget https://github.com/BLABLA/BLABLA/raw/BLABLA/BLABLA/mt.bam`
 
-##### In case that you have downloaded your data outside of your docker conatiner... 
+##### In case that you have downloaded your data outside of your docker container... 
 
 Move your data into your docker container 
-after you have downloaded it from your original location. (to know your container id simply type inyour computer $sudo docker ps, 
+after you have downloaded it from your original location. (to know your container id simply type in your computer $`sudo docker ps`, 
 and a list of all your containers will be visible)
 
 `sudo docker cp “/MY/LAPTOP/FILE/” MYACONTAINERID:/MYFILE`
@@ -90,12 +90,12 @@ and a list of all your containers will be visible)
 #############################################
 
 ## Usange 
-##### Install samtools, its quite easy to install it.
+##### Install samtools, it's quite easy to install it.
 
 `apt-get install samtools`
 
 ##### Have fun running the program 
-(in case that the script does not have de correct permissions be sure to set $chmod +x script.ExtractReadCounts.sh)
+(in case that the script does not have the correct permissions be sure to set $chmod +x script.ExtractReadCounts.sh)
 
 `./script.ExtractReadCounts.sh list.BAM.BED.txt`
 
