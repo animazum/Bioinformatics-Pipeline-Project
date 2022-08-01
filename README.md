@@ -20,8 +20,8 @@ Directory and within it you will find:
 
 ########################## IMPORTANT NOTES  ##########################
 
-PLEASE TYPE THE NAME OF A .txt FILE containing the bam
-and bed files, DO NOT USE FILES WITH SPACES IN THE NAMES.
+PLEASE USE THE NAME OF A .txt FILE containing the bam
+and bed files as input, DO NOT USE FILES WITH SPACES IN THE NAMES.
 Please uncompress all files that you want to use before using the program.
 
 Format example for inputfile:
@@ -70,6 +70,8 @@ Follow the steps to install docker as they could change depending on date, year,
 
 `apt-get update 
 apt-get upgrade
+apt-get install wget
+apt-get install zip
 `
 Now that you are in your container create a directory to store your data 
 
