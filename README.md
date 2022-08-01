@@ -30,7 +30,14 @@ This program in intended to be capable to use an n number of bam or bed files. A
 so practically any linux machine would be able to run it in no time.
 ############################################################################
 
-#Recomended preparations to run the program:
+Author
+Benjamin Padilla-Morales
+GitHub: animazum
+
+Dependencies
+samtools
+
+Recomended setup to run the program:
 
 Install docker and create docker container 
 I recommend to use docker for this as it is a very powerful tool to test and use any program in a safe and controlled environment. 
@@ -71,7 +78,8 @@ and a list of all your containers will be visible)
 $sudo docker cp “/MY/LAPTOP/FILE/” MYACONTAINERID:/MYFILE
 
 #############################################
-####Running the program
+
+Usange 
 Now to this program we need to install samtools, its quite easy to install it.
 
 $apt-get install samtools
