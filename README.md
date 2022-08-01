@@ -10,7 +10,8 @@ Input files.
 3. Index of correspondence between bam and bed files in a txt file
 
 Outputfiles.
-Directory and with in you will find: 
+
+Directory and within it you will find: 
 1. Original bam file
 2. Original bed file 
 3. Sorted bam file
